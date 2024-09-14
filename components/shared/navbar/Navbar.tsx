@@ -18,21 +18,20 @@ const Navbar = () => {
           Dev <span className="text-primary-500">Overflow</span>
         </p>
       </Link>
-
+      GlobalSearch
       <div className="flex-between gap-5">
-        <SignedIn>
-          <UserButton
-            afterSignOutUrl="/"
-            appearance={{
-              elements: {
-                avatarBox: "h-10 w-10",
-              },
-              variables: {
-                colorPrimary: "#ff7000",
-              },
-            }}
-          />
-        </SignedIn>
+        <SignedIn></SignedIn>
+        <UserButton
+          afterSignOutUrl="/"
+          appearance={{
+            elements: {
+              avatarBox: "h-10 w-10",
+            },
+            variables: {
+              colorPrimary: "#ff7000",
+            },
+          }}
+        />
       </div>
     </nav>
   );
